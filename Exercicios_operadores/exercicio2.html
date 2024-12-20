@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesada filhos</title>
+</head>
+<body>
+    
+    <script>
+
+        var filhoQuantia = parseFloat(prompt("digite a quantidade de filhos: "));
+        var dinheiroQuantia = parseFloat(prompt("digite a quantia de dinheiro para a mesada: "));
+        var mesadaFilhos = dinheiroQuantia / filhoQuantia;
+        var filhoVelhoMesada = (dinheiroQuantia % filhoQuantia) + mesadaFilhos;
+        mesadaFilhos = mesadaFilhos.toFixed(2);
+        filhoVelhoMesada = filhoVelhoMesada.toFixed(2);
+        alert("O valor que cada filho receberá é, R$" + mesadaFilhos + " e caso hajá um valor excedente o filho mais velho receberá. \n exemplo com as informações anteriores o filho mais velho receberia, R$" + filhoVelhoMesada);
+    </script>
+</body>
+</html>

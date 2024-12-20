@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de juros</title>
+</head>
+<body>
+    
+    <script>
+        var valor = parseFloat(prompt("Digite o valor do produto: "));
+        var percentualJuros = parseFloat(prompt("Digite a taxa de juros: "));
+        var tempo = parseFloat(prompt("Digite o tempo de atrazo: "));
+        var valorJuros = (valor * (percentualJuros  / 100) * tempo) + valor; 
+        valorJuros = valorJuros.toFixed(2);
+        alert("o valor pago com juros será de R$" + valorJuros);
+    </script>
+</body>
+</html>

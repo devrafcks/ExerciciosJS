@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2a403f;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    background-color: #37ab98;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    background-color: #e1ce8a;
+    padding: 3rem;
+    border-radius: 3em;
+    gap: 1rem;
+}
+
+.geralAluno{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid rgb(113, 112, 112);
+}
+
+.nomeAluno{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.infoAluno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.6em;
+}
+
+.infoAluno p{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+td, th{
+    text-wrap: nowrap;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    font-size: 1.1em;
+}
+
+td{
+    font-weight: 500;
+}

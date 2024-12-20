@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> criar paragrafo </title>
+</head>
+<body>
+    <style>
+        body{
+            font-size: 1em;
+            background-color: rgb(250, 211, 211);
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+            gap: 20px;
+        }
+
+        h3{
+            padding: 18.5px;
+            border-radius: 20px;
+            background-color: rgb(255, 79, 79);
+        }
+    </style>
+
+    <script>
+
+        let controle = 1;
+
+        while (controle <=  100) {
+            //criar um paragrafo
+            var meuParagrafo = document.createElement('h3');
+
+            //atribuir texto para parágrafo
+            meuParagrafo.textContent ="Eu amo a lavinia!";
+                       
+            //adicionar parágrafo na página HTML
+            var texto = document.querySelector('body');
+            texto.appendChild(meuParagrafo);
+            controle++;
+        }
+
+    </script>
+
+    </body>
+</html>

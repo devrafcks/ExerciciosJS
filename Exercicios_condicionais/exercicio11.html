@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status pedido</title>
+</head>
+<body>
+    <script>
+        let status = prompt("Digite pendente, enviado ou entregue para saber o status de seu pedido: ");
+        status = status.toLocaleLowerCase();
+        
+        switch(status){
+            case "pendente":
+                alert("Seu pedido está sendo preparado!");
+                break;
+            case "enviado":
+                alert("Seu pedido já foi enviado!");
+                break;
+            case "entregue":
+                alert("Seu pedido foi entregue!!!");
+                break;
+            default:
+                alert("Digite algo valido");
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+</head>
+<body>
+    <script>
+
+        var produto = parseFloat(prompt("Digite o valor do produto: "));
+        var percentualDesconto = prompt("digite o valor do desconto: ");
+        var desconto = (percentualDesconto / 100) * produto;
+        var preçoFinal = produto - desconto;
+        preçoFinal = preçoFinal.toFixed(2);
+
+        alert("O preço do produto com desconto fica: R$" + preçoFinal);
+    </script>
+</body>
+</html>

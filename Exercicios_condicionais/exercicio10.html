@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farol</title>
+</head>
+<body>
+    <script>
+        let cor = prompt("Digite vermelho, amarelo ou verde: ");
+        cor = cor.toLocaleLowerCase();
+        
+        switch(cor){
+            case "vermelho":
+                alert("Pare!!!");
+                break;
+            case "amarelo":
+                alert("Espere!!");
+                break;
+            case "verde":
+                alert("Pode Passar!");
+                break;
+            default:
+                alert("Digite uma cor valida");
+            }
+    </script>
+</body>
+</html>

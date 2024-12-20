@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<body>
+    <script>
+        var salarioFixo = 2000;
+        var crecheFilho = 45 ;
+        
+        var perguntaUm = salarioFixo + crecheFilho;
+
+        //Salarios do primeiro semestre, desconto e acrescimo
+        var comissaoJaneiro = (10 * 5784.50) / 100;
+        var salarioJaneiro = salarioFixo + comissaoJaneiro;
+        var descontoJaneiroInss = (5 * salarioJaneiro) / 100;
+        descontoJaneiroInss = descontoJaneiroInss.toFixed(2);
+
+        var comissaoFevereiro = (10 * 3418.41) / 100;
+        var salarioFevereiro = salarioFixo + comissaoFevereiro;
+        var salarioFevereiro = salarioFevereiro.toFixed(2);
+        var descontoFevereiroInss = (5 * salarioFevereiro) / 100;
+        descontoFevereiroInss = descontoFevereiroInss.toFixed(2);
+
+        var comissaoMarco = (10 * 4124.10) / 100;
+        var salarioMarco = salarioFixo + comissaoMarco;
+        var descontoMarcoInss = (5 * salarioMarco) / 100;
+        descontoMarcoInss = descontoMarcoInss.toFixed(2);
+
+        var comissaoAbril = (10 * 1874.00) / 100;
+        var salarioAbril = salarioFixo + comissaoAbril;
+        var descontoAbrilInss = (5 * salarioAbril) / 100;
+        descontoAbrilInss = descontoAbrilInss.toFixed(2);
+
+        var comissaoMaio = (10 * 7000.00) / 100;
+        var salarioMaio = salarioFixo + comissaoMaio;
+        var descontoMaioInss = (5 * salarioMaio) / 100;
+        descontoMaioInss = descontoMaioInss.toFixed(2);
+
+        var comissaoJunho = (10 * 9450.00) / 100;
+        var salarioJunho = salarioFixo + comissaoJunho;
+        var descontoJunhoInss = (5 * salarioJunho) / 100;
+        descontoJunhoInss = descontoJunhoInss.toFixed(2);
+        // fim Salarios do primeiro semestre, desconto e acrescimo 
+
+        //declaração para média
+        var salarioJaneiroMedia = salarioJaneiro - descontoJaneiroInss + crecheFilho;
+        var salarioFevereiroMedia = salarioFevereiro - descontoFevereiroInss + crecheFilho;
+        var salarioMarcoMedia = salarioMarco - descontoMarcoInss + crecheFilho;
+        var salarioAbrilMedia = salarioAbril - descontoAbrilInss + crecheFilho;
+        var salarioMaioMedia = salarioMaio - descontoMaioInss + crecheFilho;
+        var salarioJunhoMedia = salarioJunho - descontoJunhoInss + crecheFilho;
+        var mediaSalarioSoma = (salarioJaneiroMedia + salarioFevereiroMedia + salarioMarcoMedia + salarioAbrilMedia + salarioMaioMedia + salarioJunhoMedia) / 6;
+        //fim declaração para média
+
+
+        alert("O valor do salário fixo com auxilio creche é: R$" + perguntaUm);
+        alert("O valor do salário com a comissão de janeiro é: R$" + salarioJaneiro + "\n O desconto do INSS em relação ao salário de janeiro é: R$" + descontoJaneiroInss);
+        alert("O valor do salário com a comissão de fevereiro é: R$" + salarioFevereiro + "\n O desconto do INSS em relação ao salário de fevereiro é: R$" + descontoFevereiroInss);
+        alert("O valor do salário com a comissão de março é: R$" + salarioMarco + "\n O desconto do INSS em relação ao salário de março é: R$" + descontoMarcoInss);
+        alert("O valor do salário com a comissão de abril é: R$" + salarioAbril + "\n O desconto do INSS em relação ao salário de abril é: R$" + descontoAbrilInss);
+        alert("O valor do salário com a comissão de maio é: R$" + salarioMaio + "\n O desconto do INSS em relação ao salário de maio é: R$" + descontoMaioInss);
+        alert("O valor do salário com a comissão de junho é: R$" + salarioJunho + "\n O desconto do INSS em relação ao salário de junho é: R$" + descontoJunhoInss);
+        alert("A média do salário do primeiro semestre: R$" + mediaSalarioSoma.toFixed(2));
+    </script>
+</body>
+</html>

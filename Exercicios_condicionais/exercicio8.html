@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações do Ano</title>
+</head>
+<body>
+    <script>
+        let mes = prompt("Qual mês você quer saber a estação do ano: ");
+        mes = mes.toLocaleLowerCase();
+
+        if(mes == "março" || mes == "abril" || mes == "maio"){
+            alert("Outono");
+        }
+        else if(mes == "junho" || mes == "julho" || mes == "agosto"){
+            alert("Inverno");
+        }
+        else if(mes == "setembro" || mes == "outubro" || mes == "novembro"){
+            alert("Primavera");
+        }
+        else if(mes == "dezembro" || mes == "janeiro" || mes == "fevereiro"){
+            alert("Verão");
+        }
+        else{
+            alert("digite um mês valido!!");
+        }
+    </script>
+</body>
+</html>
